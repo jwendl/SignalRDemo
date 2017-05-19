@@ -20,7 +20,7 @@ namespace Subscriber
             hubConnection.Start().Wait();
             hubProxy.On("sendText", (text) =>
             {
-                Console.WriteLine("Recieved {0}: ", text);
+                Console.WriteLine("Recieved {0}", text);
             });
         }
     }
